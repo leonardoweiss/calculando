@@ -1,0 +1,292 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	background-color: white;
+}
+
+/*
+Inicio da Header
+*/
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #787674;
+	padding: 10px;
+}
+
+#logo a{
+	text-decoration: none;
+}
+
+#logo h3{
+	color: #01DBFD;
+}
+
+#logo span{
+	color: white;
+}
+
+#navegacao{
+	align-self: center;
+}
+
+#navegacao a{
+	padding: 4px 10px;
+	text-decoration: none;
+}
+
+header nav ul li{
+	color: white;
+	text-align: center;
+}
+
+#b-link, #l-link, #c-link, #cy-link, #g-link{
+	color: white;
+}
+
+#b-link:hover{
+	color: #FF4B56;
+}
+
+#l-link:hover{
+	color: #CA66FC;
+}
+
+#c-link:hover{
+	color: #00FF36;
+}
+
+#cy-link:hover{
+	color: #F0FF00;
+}
+
+#g-link:hover{
+	color: #FFC100;
+}
+
+#navegacao li{
+	list-style: none;
+	float: left;
+}
+
+/*
+Inicio da Section Principal
+*/
+
+#principal{
+	margin-top: 25px;
+}
+
+#principal ul{
+	margin-left: 30px;
+}
+
+#principal h3{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+#lei-gases h3{
+	color: #01DBFD;
+}
+
+#principal h4{
+	align-content: center;
+	padding: 7px;
+	border: 1px solid black;
+	border-radius: 2px;
+	display: inline-block;
+	margin-bottom: 2.5em;
+}
+
+input{
+	width: 5.5em;
+	border: 1px solid rgb(236, 235, 224);
+	border-radius: 3px;
+	padding: 1px;
+}
+
+form ul li{
+	list-style: none;
+	margin: 1px 0 5px 0;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+#button1, #button2, #button3, #button4, #button5{
+	padding: 5px 8px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+#button1{
+	border: 1px solid #FF4B56;
+	background-color: #FF4B56;
+	color: white;
+}
+
+#button1:hover{
+	border: 1px solid #FF4B56;
+	background-color: white;
+	color: #FF4B56;
+}
+
+#button2{
+	border: 1px solid #CA66FC;
+	background-color: #CA66FC;
+	color: white;
+}
+
+#button2:hover{
+	border: 1px solid #CA66FC;
+	background-color: white;
+	color: #CA66FC;
+}
+
+#button3{
+	border: 1px solid #00FF36;
+	background-color: #00FF36;
+	color: white;
+}
+
+#button3:hover{
+	border: 1px solid #00FF36;
+	background-color: white;
+	color: #00FF36;
+}
+
+#button4{
+	border: 1px solid #F0FF00;
+	background-color: #F0FF00;
+	color: white;
+}
+
+#button4:hover{
+	border: 1px solid #F0FF00;
+	background-color: white;
+	color: #F0FF00;
+}
+
+#button5{
+	border: 1px solid #FFC100;
+	background-color: #FFC100;
+	color: white;
+}
+
+#button5:hover{
+	border: 1px solid #FFC100;
+	background-color: white;
+	color: #FFC100;
+}
+
+.resultado{
+	width: 6em;
+	height: 30px;
+	background-color: white;
+	margin: 5px 5px 5px 0;
+	border-radius: 3px;
+}
+
+.flexbox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.infoR, .calcR{
+	width: 45%;
+	min-width: 460px;
+	border-top: 2px solid #FF4B56;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	margin: 7px 12px;
+}
+
+.infoP, .calcP{
+	width: 45%;
+	min-width: 460px;
+	border-top: 2px solid #CA66FC;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	margin: 7px 12px;
+}
+
+.infoG, .calcG{
+	width: 45%;
+	min-width: 460px;
+	border-top: 2px solid #00FF36;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	margin: 7px 12px;
+}
+
+.infoY, .calcY{
+	width: 45%;
+	min-width: 460px;
+	border-top: 2px solid #F0FF00;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	margin: 7px 12px;
+}
+
+.infoO, .calcO{
+	width: 45%;
+	min-width: 460px;
+	border-top: 2px solid #FFC100;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	margin: 7px 12px;
+}
+
+.red{
+	color: #FF4B56;
+}
+
+.purple{
+	color: #CA66FC;
+}
+
+.green{
+	color: #00FF36;
+}
+
+.yellow{
+	color: #F0FF00;
+}
+
+.orange{
+	color: #FFC100;
+}
+
+/*
+roda-pé
+*/
+
+#rodape{
+	height: 4em;
+	background-color: #787674;
+}
+
+footer p{
+	color: #01DBFD;
+	position: relative;
+	top: 32%;
+	left: 125px;
+	width: 300px;
+}

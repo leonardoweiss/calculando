@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+        <head>
+            <title>Calculando - Lei dos Gases Ideais</title>
+            <link rel="icon" href="">
+
+			<!-- Meta tags Obrigatórias -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+			<!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+			<!-- CSS -->
+			<link rel="stylesheet" type="text/css" href="../estilos/style.css">
+
+			<!-- Font Awesome -->
+			<script src="https://kit.fontawesome.com/fcba8eb07f.js" crossorigin="anonymous"></script>
+
+       	</head>
+		
+		<body>
+			<header>
+				<div id="logo">
+					<a href="index.html">
+						<h3>Lei dos <span>Gases Ideais</span></h3>
+					</a>
+				</div>
+				<nav id="navegacao">
+					<ul>
+						<li><a href="#boyleh" id="b-link">Lei de Boyle</a>|</li>
+						<li><a href="#lussach" id="l-link">Lei de Gay-Lussac</a>|</li>
+						<li><a href="#charlesh" id="c-link">Lei de Charles</a>|</li>
+						<li><a href="#clapeyronh" id="cy-link">Equação de Clapeyron</a>|</li>
+						<li><a href="#geralh" id="g-link">Equação Geral do Gases</a></li>
+					</ul>
+				</nav>
+			</header>
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\SECTION\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+			<section class="container" id="principal">
+				<div id="lei-gases">
+					<h3>Lei do Gases Ideais</h3>
+					<p>A lei dos gases ideais estabelece uma relação entre a pressão, o volume e a temperatura de determinado gás. 
+					Desta maneira, foram atribuídas três leis: A de Boyle, a de Gay-Lussac e a de Charles, cada uma delas mantendo constante uma grandeza. Vejamos abaixo:</p>
+				</div><hr>
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Lei de Boyle\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+				<h3 id="boyleh" class="red">LEI DE BOYLE</h3> 
+				
+				<div id="boyle" class="flexbox">
+					
+					<div class="infoR">
+						<p>A lei de Boyle determina que a temperatura do gás é constante, ou seja, ela é isotérmica.
+						Sua equação é determinada da seguinte forma;</p>
+						<h4>P.V = K</h4>
+						<h5>Sendo:</h5>
+						<ul>
+							<li>P = Pressão</li>
+							<li>V =  Volume</li>
+							<li>K = Constante de temperatura</li>
+						</ul>
+						
+					</div>
+					<div class="calcR">
+						<h5>Use os campos abaixo para calcular:</h5>
+						<form>
+							<ul>
+								<li>
+									<div>Pressão:</div><input type="text" name="pressao1" id="pressao1" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Volume:</div><input type="text" name="volume1" id="volume1" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Constante K:</div><input type="text" name="consTemp" id="consTemp" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Grandeza a ser calculada:</div><input type="text" name="grandeza1" id="grandeza1" placeholder="digite aqui">
+								</li>
+								<li>
+									<button id="button1" type="button" onclick="getElementById('resultado1').value = calcularBoyle(pressao1, volume1, consTemp, grandeza1)">calcular</button>
+								</li>
+								<li>
+									<input type="text" name="resultado1" id="resultado1">
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div><hr>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Lei de Gay-Lussac\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+				<h3 id="lussach" class="purple">LEI DE GAY-LUSSAC</h3> 
+				
+				<div id="lussac" class="flexbox">
+					
+					<div class="infoP">
+						<p>A lei de Gay-Lussac determina que a pressão do gás é constante, ou seja, ela é isobárica.
+						Sua equação é determinada da seguinte forma;</p>
+						<h4>V = K.T</h4>
+						<h5>Sendo:</h5>
+						<ul>
+							<li>V = Volume</li>
+							<li>T =  Temperatura</li>
+							<li>K = Constante de Pressão</li>
+						</ul>
+					</div>
+					<div class="calcP">
+						<h5>Use os campos abaixo para calcular:</h5>
+						<form>
+							<ul>
+								<li>
+									<div>Temperatura:</div><input type="text" name="temperatura2" id="temperatura2" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Volume:</div><input type="text" name="volume2" id="volume2" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Constante K:</div><input type="text" name="consPres" id="consPres" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Grandeza a ser calculada:</div><input type="text" name="grandeza2" id="grandeza2" placeholder="digite aqui">
+								</li>
+								<li>
+									<button id="button2" type="button" onclick="getElementById('resultado2').value = calcularLussac(volume2, temperatura2, consPres, grandeza2)">calcular</button>
+								</li>
+								<li>
+									<input type="text" name="resultado2" id="resultado2">
+								</li>
+							</ul>
+							</ul>
+						</form>
+					</div>
+				</div><hr>
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Lei de Charles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+				<h3 id="charlesh" class="green">LEI DE CHARLES</h3> 
+				
+				<div id="charles" class="flexbox">
+					
+					<div class="infoG">
+						<p>A lei de Boyle determina que o volume do gás é constante, ou seja, ela é isovolumétrica.
+						Sua equação é determinada da seguinte forma:</p>
+						<h4>P = K.T</h4>
+						<h5>Sendo:</h5>
+						<ul>
+							<li>P = Pressão</li>
+							<li>T = Temperatura</li>
+							<li>K = Constante de volume</li>
+						</ul>
+					</div>
+					
+					<div class="calcG">
+						<h5>Use os campos abaixo para calcular:</h5>
+						<form>
+							<ul>
+								<li>
+									<div>Pressao:</div><input type="text" name="pressao3" id="pressao3" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Temperatura:</div><input type="text" name="temperatura3" id="temperatura3" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Constante K:</div><input type="text" name="consVol" id="consVol" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Grandeza a ser calculada:</div><input type="text" name="grandeza3" id="grandeza3" placeholder="digite aqui">
+								</li>
+								<li>
+									<button id="button3" type="button" onclick="getElementById('resultado3').value = calcularCharles(pressao3, temperatura3, consVol, grandeza3)">calcular</button>
+								</li>
+								<li>
+									<input type="text" name="resultado3" id="resultado3">
+								</li>
+
+							</ul>		
+						</form>
+					</div>
+				</div><hr>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\EQUAÇÃO DE CLAPEYRON\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+				<h3 id="clapeyronh" class="yellow">EQUAÇÃO DE CLAPEYRON</h3>
+				
+				<div id="clapeyron" class="flexbox">
+					
+					<div class="infoY">
+						<p>A equação de Clapeyron relaciona as três grandezas anteriores com o número de mols(n), que é obtido através do quociente da massa da molécula, pela massa atômica da mesma. É relacionada também uma constante (R) que é definida como: 0.082atm.L/mol.K
+						Desta maneira é necessário usar as medidas da seguinte maneira:</p>
+						<ul>
+							<li>Pressão (P) em atm</li>
+							<li>Volume (V) em Litros</li>
+							<li>Temperatura (T) em Kelvin</li>
+						</ul>
+						<p class="bold">Sua equação é determinada da seguinte forma:</p>
+						<h4>P.V = n.R.T</h4>
+
+					</div>
+
+					<div class="calcY">
+						<h5>Use os campos abaixo para calcular:</h5>
+						<form>
+							<ul>
+								<li>
+									<div>Pressao:</div><input type="text" name="pressaoC" id="pressaoC" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Volume:</div><input type="text" name="volumeC" id="volumeC" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>nº de mols:</div><input type="text" name="mols" id="mols" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Temperatura:</div><input type="text" name="temperaturaC" id="temperaturaC" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Grandeza a ser calculada:</div><input type="text" name="grandezaC" id="grandezaC" placeholder="digite aqui">
+								</li>
+								<li>
+									<button id="button4" type="button" onclick="getElementById('resultadoC').value = calcularClapeyron(pressaoC, volumeC, temperaturaC, mols, grandezaC)">calcular</button>
+								</li>
+								<li>
+									<input type="text" name="resultadoC" id="resultadoC">
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div><hr>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\EQUAÇÃO GERAL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+				<h3 id="geralh" class="orange">EQUAÇÃO GERAL DOS GASES</h3> 
+				
+				<div id="geral" class="flexbox">
+					
+					<div class="infoO">
+						<p>Através das três Transformações gasosas (isotérmica, isobárica, isovolumétrica), é que se chegou à Equação geral dos gases: Observe que a equação aborda as três variáveis de estado (P, V e T):</p>
+						<h4>P1.V1/T1 = P2.V2/T2</h4>
+					</div>
+
+					<div class="calcO">
+						<h5>Use os campos abaixo para calcular:</h5>
+						<form>
+							<ul>
+								<li>
+									<div>Pressao inicial:</div><input type="text" name="PI" id="PI" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Volume inicial:</div><input type="text" name="VI" id="VI" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Temperatura inicial:</div><input type="text" name="TI" id="TI" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Pressao final:</div><input type="text" name="PF" id="PF" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Volume final:</div><input type="text" name="VF" id="VF" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Temperatura final:</div><input type="text" name="TF" id="TF" placeholder="digite aqui">
+								</li>
+								<li>
+									<div>Grandeza a ser calculada:</div><input type="text" name="grandezaG" id="grandezaG" placeholder="digite aqui">
+								</li>
+								<li>
+									<button id="button5" type="button" onclick="getElementById('resultadoG').value = calcularGeral(TI, VI, PI, TF, VF, PF, grandezaG)">calcular</button>
+								</li>
+								<li>
+									<input type="text" name="resultadoG" id="resultadoG">
+								</li>
+							</ul>	
+						</form>
+					</div>
+				</div><hr>
+			</section>
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RODA-PÉ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+			<footer id="rodape">
+				<p>Todos os direitos reservados | 2022</p>
+			</footer>
+
+			
+
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\JAVASCRIPT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+			<script>
+
+				function calcularBoyle(pressao1, volume1, consTemp, grandeza1){
+					
+					var pressao1 = document.getElementById('pressao1').value;
+					var volume1 = document.getElementById('volume1').value;
+					var consTemp = document.getElementById('consTemp').value;
+					var grandeza1 = document.getElementById('grandeza1').value;
+
+					pressao1 = parseFloat(pressao1);
+					volume1 = parseFloat(volume1);
+					consTemp = parseFloat(consTemp);
+
+					var resultado1 = 0;
+
+					ru
+
+					if (grandeza1 == 'pressão') {
+				        resultado1 = consTemp / volume1
+				    } else if (grandeza1 == 'volume') {
+				        resultado1 = consTemp / pressao1
+				    } else if (grandeza1 == 'K') {
+				        resultado1 = pressao1 * volume1
+				    }
+				   
+				    return resultado1;
+				};
+
+				function calcularLussac(volume2, temperatura2,  consPres, grandeza2){
+					
+					var temperatura2 = document.getElementById('temperatura2').value;
+					var volume2 = document.getElementById('volume2').value;
+					var consPres = document.getElementById('consPres').value;
+					var grandeza2 = document.getElementById('grandeza2').value;
+
+					temperatura2 = parseFloat(temperatura2);
+					volume2 = parseFloat(volume2);
+					consPres = parseFloat(consPres);
+
+					var resultado2 = 0;
+
+					if (grandeza2 == 'temperatura') {
+				        resultado2 = volume2 / consPres
+				    } else if (grandeza2 == 'volume') {
+				        resultado2 = temperatura2 * consPres
+				    } else if (grandeza2 == 'K') {
+				        resultado2 = volume2 / temperatura2
+				    }
+				   
+				    return resultado2;
+				};
+
+				function calcularCharles(pressao3, temperatura3, consVol, grandeza3){
+					
+					var temperatura3 = document.getElementById('temperatura3').value;
+					var pressao3 = document.getElementById('pressao3').value;
+					var consVol = document.getElementById('consVol').value;
+					var grandeza3 = document.getElementById('grandeza3').value;
+
+					temperatura3 = parseFloat(temperatura3);
+					pressao3 = parseFloat(pressao3);
+					consVol = parseFloat(consVol);
+
+					var resultado3 = 0;
+
+					if (grandeza3 == 'temperatura') {
+				        resultado3 = pressao3 / consVol
+				    } else if (grandeza3 == 'pressão') {
+				        resultado3 = temperatura3 * consVol
+				    } else if (grandeza3 == 'K') {
+				        resultado3 = pressao3 / temperatura3
+				    }
+				   
+				    return resultado3;
+				};
+				
+				function calcularClapeyron(pressaoC, volumeC, temperaturaC, mols, grandezaC){
+					
+					var pressaoC = document.getElementById('pressaoC').value;
+					var volumeC = document.getElementById('volumeC').value;
+					var temperaturaC = document.getElementById('temperaturaC').value;
+					var mols = document.getElementById('mols').value;
+					var grandezaC = document.getElementById('grandezaC').value;
+
+					var resultado = 0;
+					
+
+					if (grandezaC == 'pressão') {
+                        resultado = (mols * 0.082 * temperaturaC) / volumeC
+                    } else if (grandezaC == 'volume') {
+                        resultado = (mols * 0.082 * temperaturaC) / pressaoC
+                    } else if (grandezaC == 'temperatura') {
+                        resultado = ( pressaoC * volumeC ) / ( mols * 0.082 )
+                    } else if (grandezaC = 'mols') {
+                        resultado = ( pressaoC * volumeC ) / ( 0.082 * temperaturaC )
+                    }
+
+
+
+                    return resultado;
+
+				};
+
+
+				function calcularGeral(TI, VI, PI, TF, VF, PF, grandezaG){
+					
+					var TI = document.getElementById('TI').value;
+					var VI = document.getElementById('VI').value;
+					var PI = document.getElementById('PI').value;
+					var TF = document.getElementById('TF').value;
+					var VF = document.getElementById('VF').value;
+					var PF = document.getElementById('PF').value;
+					var grandezaG = document.getElementById('grandezaG').value;
+
+					var resultadoG = 0;
+					
+
+					if (grandezaG == 'TI') {
+                        resultadoG = (PI * VI * TF) / (PF * VF)
+                    } else if (grandezaG == 'VI') {
+                        resultadoG = (TI * PF * VF) / (PI * TF)
+                    } else if (grandezaG == 'PI') {
+                        resultadoG = (TI * PF * VF) / (VI * TF)
+                    } else if (grandezaG = 'TF') {
+                        resultadoG = (TI * PF * VF) / (PI * VI)
+                    }else if (grandezaG == 'VF') {
+                        resultadoG = PI * VI * TF / TI * PF
+                    } else if (grandezaG = 'PF') {
+                        resultadoG = (PI * VI * TF) / (TI * VF)
+                    }
+
+
+
+                    return resultadoG;
+
+				};
+
+			</script>
+
+		</body>
+	</html>

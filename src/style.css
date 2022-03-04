@@ -5,7 +5,7 @@
 
 body{
 	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
-	background-color: white;
+	background-color: #161b22;
 }
 
 /*
@@ -16,7 +16,7 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background-color: #787674;
+	background-color: black;
 	padding: 10px;
 }
 
@@ -25,7 +25,17 @@ header{
 }
 
 #logo h3{
-	color: #01DBFD;
+	background-image: linear-gradient(to left, #FF4B56, #CA66FC);
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black; 
 }
 
 #logo span{
@@ -63,7 +73,7 @@ header nav ul li{
 }
 
 #cy-link:hover{
-	color: #F0FF00;
+	color: #00FF36;
 }
 
 #g-link:hover{
@@ -112,6 +122,7 @@ input{
 	border: 1px solid rgb(236, 235, 224);
 	border-radius: 3px;
 	padding: 1px;
+	background-color: #CFCECE;
 }
 
 form ul li{
@@ -128,6 +139,9 @@ form ul li{
 	border-radius: 3px;
 	cursor: pointer;
 	margin-top: 5px;
+	width: 50%;
+	position: relative;
+	left: 25%;
 }
 
 #button1{
@@ -166,6 +180,10 @@ form ul li{
 	color: #00FF36;
 }
 
+p, li, h4, h5{
+	color: white;
+}
+
 #button4{
 	border: 1px solid #F0FF00;
 	background-color: #F0FF00;
@@ -198,6 +216,13 @@ form ul li{
 	border-radius: 3px;
 }
 
+.nota{
+	padding: 3px;
+	color: #979696;
+	font-size: 10px;
+	margin: 1px;
+}
+
 .flexbox{
 	display: flex;
 	flex-wrap: wrap;
@@ -210,7 +235,7 @@ form ul li{
 	border-top: 2px solid #FF4B56;
 	border-radius: 20px;
 	padding: 10px;
-	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	box-shadow: 2px 4px 4px rgba(208, 209, 208, 0.4);
 	margin: 7px 12px;
 }
 
@@ -220,7 +245,7 @@ form ul li{
 	border-top: 2px solid #CA66FC;
 	border-radius: 20px;
 	padding: 10px;
-	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	box-shadow: 2px 4px 4px rgba(208, 209, 208, 0.4);
 	margin: 7px 12px;
 }
 
@@ -230,7 +255,7 @@ form ul li{
 	border-top: 2px solid #00FF36;
 	border-radius: 20px;
 	padding: 10px;
-	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	box-shadow: 2px 4px 4px rgba(208, 209, 208, 0.4);
 	margin: 7px 12px;
 }
 
@@ -240,7 +265,7 @@ form ul li{
 	border-top: 2px solid #F0FF00;
 	border-radius: 20px;
 	padding: 10px;
-	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	box-shadow: 2px 4px 4px rgba(208, 209, 208, 0.4);
 	margin: 7px 12px;
 }
 
@@ -250,8 +275,13 @@ form ul li{
 	border-top: 2px solid #FFC100;
 	border-radius: 20px;
 	padding: 10px;
-	box-shadow: 2px 2px 2px rgba(236, 235, 224, 1);
+	box-shadow: 2px 4px 4px rgba(208, 209, 208, 0.4);
 	margin: 7px 12px;
+}
+
+.result{
+	width: 8em;
+	border: 1px solid #515151;
 }
 
 .red{
@@ -280,13 +310,39 @@ roda-pé
 
 #rodape{
 	height: 4em;
-	background-color: #787674;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+}
+
+#icons, #nota-rp{
+	margin-top: 15px;
+}
+
+#icons ul li{
+	list-style: none;
+	float: left;
+}
+
+#icons ul li a{
+	background-image: linear-gradient(to left, #FF4B56, #CA66FC);
+  	background-clip: text;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	color: black;
+  	font-size: 20px;
+  	padding: 2px 15px;
+  	margin: 0;
 }
 
 footer p{
-	color: #01DBFD;
-	position: relative;
-	top: 32%;
-	left: 125px;
+	background-image: linear-gradient(to left, #FF4B56, #CA66FC);
+  	background-clip: text;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	color: black;
 	width: 300px;
+	margin: 0;
+	padding: 0;
 }

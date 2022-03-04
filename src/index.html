@@ -2,7 +2,7 @@
 	<html lang="pt-br">
         <head>
             <title>Calculando - Lei dos Gases Ideais</title>
-            <link rel="icon" href="">
+            <link rel="icon" href="icon.png">
 
 			<!-- Meta tags Obrigatórias -->
 			<meta charset="utf-8">
@@ -12,7 +12,7 @@
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 			<!-- CSS -->
-			<link rel="stylesheet" type="text/css" href="../estilos/style.css">
+			<link rel="stylesheet" type="text/css" href="style.css">
 
 			<!-- Font Awesome -->
 			<script src="https://kit.fontawesome.com/fcba8eb07f.js" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
 			<header>
 				<div id="logo">
 					<a href="index.html">
-						<h3>Lei dos <span>Gases Ideais</span></h3>
+						<h3>Lei dos Gases Ideais</h3>
 					</a>
 				</div>
 				<nav id="navegacao">
@@ -49,7 +49,7 @@
 				<div id="boyle" class="flexbox">
 					
 					<div class="infoR">
-						<p>A lei de Boyle determina que a temperatura do gás é constante, ou seja, ela é isotérmica.
+						<p><strong>A lei de Boyle</strong> determina que a temperatura do gás é constante, ou seja, ela é isotérmica.
 						Sua equação é determinada da seguinte forma;</p>
 						<h4>P.V = K</h4>
 						<h5>Sendo:</h5>
@@ -80,7 +80,12 @@
 									<button id="button1" type="button" onclick="getElementById('resultado1').value = calcularBoyle(pressao1, volume1, consTemp, grandeza1)">calcular</button>
 								</li>
 								<li>
-									<input type="text" name="resultado1" id="resultado1">
+									<input type="text" name="resultado1" id="resultado1" disabled="disabled" placeholder="resultado" class="result">
+								</li>
+								<li>
+									<p class="nota">*para números decimais utilize "."</p>
+									<p class="nota">*Pressão = P; Volume = V; Temperatura = T; Constante K = K; Mols = n; 
+									Volume inicial = VI; Volume final = VF; Temperatura inicial = TI; temperatura final = TF; Pressão inicial = PI; Pressão final = PF.</p>
 								</li>
 							</ul>
 						</form>
@@ -94,7 +99,7 @@
 				<div id="lussac" class="flexbox">
 					
 					<div class="infoP">
-						<p>A lei de Gay-Lussac determina que a pressão do gás é constante, ou seja, ela é isobárica.
+						<p><strong>A lei de Gay-Lussac</strong> determina que a pressão do gás é constante, ou seja, ela é isobárica.
 						Sua equação é determinada da seguinte forma;</p>
 						<h4>V = K.T</h4>
 						<h5>Sendo:</h5>
@@ -124,9 +129,13 @@
 									<button id="button2" type="button" onclick="getElementById('resultado2').value = calcularLussac(volume2, temperatura2, consPres, grandeza2)">calcular</button>
 								</li>
 								<li>
-									<input type="text" name="resultado2" id="resultado2">
+									<input type="text" name="resultado2" id="resultado2" disabled="disabled" placeholder="resultado" class="result">
 								</li>
-							</ul>
+								<li>
+									<p class="nota">*para números decimais utilize "."</p>
+									<p class="nota">*Pressão = P; Volume = V; Temperatura = T; Constante K = K; Mols = n; 
+									Volume inicial = VI; Volume final = VF; Temperatura inicial = TI; temperatura final = TF; Pressão inicial = PI; Pressão final = PF.</p>
+								</li>
 							</ul>
 						</form>
 					</div>
@@ -137,7 +146,7 @@
 				<div id="charles" class="flexbox">
 					
 					<div class="infoG">
-						<p>A lei de Boyle determina que o volume do gás é constante, ou seja, ela é isovolumétrica.
+						<p><strong>A lei de Boyle</strong> determina que o volume do gás é constante, ou seja, ela é isovolumétrica.
 						Sua equação é determinada da seguinte forma:</p>
 						<h4>P = K.T</h4>
 						<h5>Sendo:</h5>
@@ -168,9 +177,13 @@
 									<button id="button3" type="button" onclick="getElementById('resultado3').value = calcularCharles(pressao3, temperatura3, consVol, grandeza3)">calcular</button>
 								</li>
 								<li>
-									<input type="text" name="resultado3" id="resultado3">
+									<input type="text" name="resultado3" id="resultado3" disabled="disabled" placeholder="resultado" class="result">
 								</li>
-
+								<li>
+									<p class="nota">*para números decimais utilize "."</p>
+									<p class="nota">*Pressão = P; Volume = V; Temperatura = T; Constante K = K; Mols = n; 
+									Volume inicial = VI; Volume final = VF; Temperatura inicial = TI; temperatura final = TF; Pressão inicial = PI; Pressão final = PF.</p>
+								</li>
 							</ul>		
 						</form>
 					</div>
@@ -183,7 +196,7 @@
 				<div id="clapeyron" class="flexbox">
 					
 					<div class="infoY">
-						<p>A equação de Clapeyron relaciona as três grandezas anteriores com o número de mols(n), que é obtido através do quociente da massa da molécula, pela massa atômica da mesma. É relacionada também uma constante (R) que é definida como: 0.082atm.L/mol.K
+						<p><strong>A equação de Clapeyron</strong> relaciona as três grandezas anteriores com o número de mols(n), que é obtido através do quociente da massa da molécula, pela massa atômica da mesma. É relacionada também uma constante (R) que é definida como: 0.082atm.L/mol.K
 						Desta maneira é necessário usar as medidas da seguinte maneira:</p>
 						<ul>
 							<li>Pressão (P) em atm</li>
@@ -218,7 +231,12 @@
 									<button id="button4" type="button" onclick="getElementById('resultadoC').value = calcularClapeyron(pressaoC, volumeC, temperaturaC, mols, grandezaC)">calcular</button>
 								</li>
 								<li>
-									<input type="text" name="resultadoC" id="resultadoC">
+									<input type="text" name="resultadoC" id="resultadoC" disabled="disabled" placeholder="resultado" class="result">
+								</li>
+								<li>
+									<p class="nota">*para números decimais utilize "."</p>
+									<p class="nota">*Pressão = P; Volume = V; Temperatura = T; Constante K = K; Mols = n; 
+									Volume inicial = VI; Volume final = VF; Temperatura inicial = TI; temperatura final = TF; Pressão inicial = PI; Pressão final = PF.</p>
 								</li>
 							</ul>
 						</form>
@@ -232,7 +250,7 @@
 				<div id="geral" class="flexbox">
 					
 					<div class="infoO">
-						<p>Através das três Transformações gasosas (isotérmica, isobárica, isovolumétrica), é que se chegou à Equação geral dos gases: Observe que a equação aborda as três variáveis de estado (P, V e T):</p>
+						<p>Através das três Transformações gasosas (isotérmica, isobárica, isovolumétrica), é que se chegou à <strong>Equação geral dos gases</strong>: Observe que a equação aborda as três variáveis de estado (P, V e T):</p>
 						<h4>P1.V1/T1 = P2.V2/T2</h4>
 					</div>
 
@@ -265,7 +283,12 @@
 									<button id="button5" type="button" onclick="getElementById('resultadoG').value = calcularGeral(TI, VI, PI, TF, VF, PF, grandezaG)">calcular</button>
 								</li>
 								<li>
-									<input type="text" name="resultadoG" id="resultadoG">
+									<input type="text" name="resultadoG" id="resultadoG" disabled="disabled" placeholder="resultado" class="result">
+								</li>
+								<li>
+									<p class="nota">*para números decimais utilize "."</p>
+									<p class="nota">*Pressão = P; Volume = V; Temperatura = T; Constante K = K; Mols = n; 
+									Volume inicial = VI; Volume final = VF; Temperatura inicial = TI; temperatura final = TF; Pressão inicial = PI; Pressão final = PF.</p>
 								</li>
 							</ul>	
 						</form>
@@ -276,7 +299,22 @@
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RODA-PÉ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
 			<footer id="rodape">
-				<p>Todos os direitos reservados | 2022</p>
+				<div id="nota-rp">
+					<p>Todos os direitos reservados | 2022</p>
+				</div>
+				<div id="icons">
+					<ul>
+						<li>
+							<a href="https://www.instagram.com/leonardo.sw/"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/eu_weiss"><i class="fab fa-github"></i></a>
+						</li>
+						<li>
+							<a href="https://github.com/leonardoweiss"><i class="fab fa-twitter"></i></a>
+						</li>
+					</ul>
+				</div>
 			</footer>
 
 			
@@ -298,14 +336,14 @@
 
 					var resultado1 = 0;
 
-					ru
-
-					if (grandeza1 == 'pressão') {
+					if (grandeza1 == 'P') {
 				        resultado1 = consTemp / volume1
-				    } else if (grandeza1 == 'volume') {
+				    } else if (grandeza1 == 'V') {
 				        resultado1 = consTemp / pressao1
 				    } else if (grandeza1 == 'K') {
 				        resultado1 = pressao1 * volume1
+				    } else {
+				    	resultado1 = 'NaN'
 				    }
 				   
 				    return resultado1;
@@ -324,12 +362,14 @@
 
 					var resultado2 = 0;
 
-					if (grandeza2 == 'temperatura') {
+					if (grandeza2 == 'T') {
 				        resultado2 = volume2 / consPres
-				    } else if (grandeza2 == 'volume') {
+				    } else if (grandeza2 == 'V') {
 				        resultado2 = temperatura2 * consPres
 				    } else if (grandeza2 == 'K') {
 				        resultado2 = volume2 / temperatura2
+				    } else {
+				    	resultado2 = 'NaN'
 				    }
 				   
 				    return resultado2;
@@ -348,12 +388,14 @@
 
 					var resultado3 = 0;
 
-					if (grandeza3 == 'temperatura') {
+					if (grandeza3 == 'T') {
 				        resultado3 = pressao3 / consVol
-				    } else if (grandeza3 == 'pressão') {
+				    } else if (grandeza3 == 'P') {
 				        resultado3 = temperatura3 * consVol
 				    } else if (grandeza3 == 'K') {
 				        resultado3 = pressao3 / temperatura3
+				    }else {
+				    	resultado3 = 'NaN'
 				    }
 				   
 				    return resultado3;
@@ -370,15 +412,17 @@
 					var resultado = 0;
 					
 
-					if (grandezaC == 'pressão') {
+					if (grandezaC == 'P') {
                         resultado = (mols * 0.082 * temperaturaC) / volumeC
-                    } else if (grandezaC == 'volume') {
+                    } else if (grandezaC == 'V') {
                         resultado = (mols * 0.082 * temperaturaC) / pressaoC
-                    } else if (grandezaC == 'temperatura') {
+                    } else if (grandezaC == 'T') {
                         resultado = ( pressaoC * volumeC ) / ( mols * 0.082 )
-                    } else if (grandezaC = 'mols') {
+                    } else if (grandezaC = 'n') {
                         resultado = ( pressaoC * volumeC ) / ( 0.082 * temperaturaC )
-                    }
+                    } else {
+				    	resultado = 'NaN'
+				    }
 
 
 
@@ -412,7 +456,9 @@
                         resultadoG = PI * VI * TF / TI * PF
                     } else if (grandezaG = 'PF') {
                         resultadoG = (PI * VI * TF) / (TI * VF)
-                    }
+                    }else {
+				    	resultadoG = 'NaN'
+				    }
 
 
 
@@ -421,6 +467,5 @@
 				};
 
 			</script>
-
 		</body>
 	</html>
